@@ -1,0 +1,94 @@
+/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
+
+html {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Courier New", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  background-image: url("robot.gif");
+  background-repeat: no-repeat;
+  background-color: #49badd;
+  background-position: left center;
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.jokeBtn{
+  padding: 20px 30px;
+  font-size: 1.5rem;
+  border-radius: 7px;
+  background-color: rgb(229, 61, 117);
+  color: #fff;
+  border: none;
+  box-shadow: 0 3px 3px 5px rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+
+.jokeBtn:hover{
+  filter: brightness(95%);
+}
+
+.jokeBtn:active{
+  transform: translate(0, 3px);
+}
+
+.jokeBtn:disabled {
+  background-color: rgb(94, 117, 134);
+  filter: blur(120%);
+  cursor: wait;
+}
+
+.jokeText{
+  text-align: center;
+  line-height: 2rem;
+  font-weight: bold;
+  border: 1px solid #000;
+  font-size: 1.5rem;
+  background-color: rgba(255,255,255, 0.4);
+  padding: 10px 25px;
+  max-width: 500px;
+  min-width: 300px;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  box-shadow: 0 3px 3px 4px rgba(0,0,0,0.2);
+}
+
+.loader{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255,255,255,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-icon{
+  width: 30px;
+}
+
+
+@media screen and (max-width: 500px){
+  .container{
+    background-position: top center;
+    background-size: contain;
+  }
+
+  .jokeText {
+    margin: 15px
+  }
+}

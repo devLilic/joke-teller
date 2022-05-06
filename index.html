@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Teller</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="jokeText" id="jokeText">
+            Press the button to listen a new Joke
+        </div>
+        <button id="newJokeBtn" class="jokeBtn">Tell me a Joke</button>
+        <audio class="audioJoke" id="audioElement" controls hidden></audio>
+    </div>
+
+    <div class="loader" id="loader" hidden><img src="loader.svg" alt="Loader" class="loader-icon"></div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
